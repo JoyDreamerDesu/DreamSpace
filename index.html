@@ -4,49 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xjv8twx.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css"> <!--link til stylesheet-->
-    <title>Hvad er Git?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <title>DREAMSPACE | Forside</title>
 </head>
 <body>
-    <h1>Hvad dælen er Git?</h1>
+    <header>
+        <nav>
+            <!--Logo - jeg linker til logo'et, så man kan trykke tilbage til index-siden på billedet/logo-->
+            <a href="#">
+                <img class="logo" src="img/placeholder.jpg" alt="logo af DREAMSPACE">
+            </a>
 
-    <p>Git er noget vi skal bruge fordi det åbenbart er nemt? Not! Anyways. Her er nogle commandoer!</p>
+            <!--Burgermenu-->            
+            <!--Bars icon-->
+            <i class="fas fa-bars"></i>
+            
+            <ul class="mainnav">
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">Hvad tilbyder vi?</a></li>
+                <li><a href="#">Mød os</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Git cd "folder"</h2>
-    <p>Man skal huske at "connecte" sin Git mappe så det "Repository" man vil hente, ender det rigtige sted.</p>
-    <p>Det gør man først ved at åbne sin Comman Promt og skrive "cd (slip din git folder i vinduet)"</p>
-    <p>Så har Git selv fundet ud af hvor den skal smide alle de filer du henter.</p>
+    <main>
+        <!--Her kommer introduktionsvideo-->
+        <div>
+            <video controls width="320" height="240" autoplay loop muted>
+            <source src="#" type="video/mp4">
+            <p>Your browser does not support the video tag.</p> <!--vises kun, hvis brosweren ikke kan afspille videoen-->
+            <button class="btn1">MAKE MY WISH COME TRUE</button>
+            </video>
+        </div>
+        <img class="illustration" src="img/placeholder.jpg" alt="illustration til introduktion af forside">
 
-    <h2>Git Clone</h2>
-    <p>Den første gang man henter en fil, skal man clone det</p>
-    <p>Det at clone en fil, vil sige at man henter en fil via en URL</p>
-    <p>Inde i commando prompt skriver man: git clone <url></p>
+        <article class="cases">
+            <h2>VORES SENESTE CASES</h2>
+            <img class="casesimg" src="img/placeholder.jpg" alt="cases omkring Grey Wolf">
+            <h4>Grey Wolf</h4>
+            
+            <img class="casesimg" src="img/placeholder.jpg" alt="cases omkring Webaccessibility">
+            <h4>Webaccessibility</h4>            
+            
+            <img class="casesimg" src="img/placeholder.jpg" alt="cases omkring Bom'Skarp">
+            <h4>Bom'Skarp</h4>
+        </article>
 
-    <h2>Git status</h2>
-    <p>Git status viser noget status på dine filer.</p>
-    <p>Hvad der er push, commit eller add'et.</p>
-    <p>Git status kan bruges hele tiden, det er bare en status kommando.</p>
+        <div class="cta">
+            <p>Ønsker du en uforpligtende samtale, så kontakt os her</p>
+            <button class="btn2">KONTAKT</button>
+        </div>
 
-    <h2>Git add .</h2>
-    <p>Man bruger "Git add ." når man skal have gemt ens process. Punktumet betyder at man gemmer alle filer i folderen</p>
-    <p>Man skal altid bruge "Git add" før man bruger de andre kommandoer ift. at dele sin fil.</p>
+        <article class="værdier">
+            <h2>VORES VÆRDIER</h2>
+            <img class="værdier" src="img/placeholder.jpg" alt="vores værdi omkring">
+            <h4>VÆRDIEN</h4>
 
-    <h2>Git Commit -m "message"</h2>
-    <p>Man bruger "git commit -m "message" til at fortælle andre hvilke ændringer/tilføjelser eller ting man har slettet samt hvem der har gjort det og hvornår</p>
-    <p>Man kan sige, at når man "comitter" tager man et "screenshot" af filen som man har ændret og gemmer det i databasen</p>
+            <img class="værdier" src="img/placeholder.jpg" alt="vores værdi omkring">
+            <h4>VÆRDIEN</h4>
 
-    <h2>Git push</h2>
-    <p>Man bruger git push til at sende det man tilføjer til sit projekt online, så alle kan tilgå det.</p>
-    <p>Det er vigtigt at man ikke git pusher for meget, fordi man kan ende med at overright andres versioner af det samme projekt.</p>
-    <p>Hold derfor øje med din gruppes versioner, og "git commit -m" hvis man bare gerne vil gemme.</p>
+            <img class="værdier" src="img/placeholder.jpg" alt="vores værdi omkring">
+            <h4>VÆRDIEN</h4>
+        </article>
+    </main>
 
-    <h2>Git pull</h2>
-    <p>Med git pull henter man de filer der allerede er arbejdet på.</p>
+    <footer>
+        <div class="footer">
+            <p>Ønsker du hjælp til din drøm?</p>
+            <button>JA!</button>
+            <br>
+            <a href="mailto:dreamspace@gmailcom"> dreamspace@gmail.com<a>
+            <a href="telto:12345678">12 34 56 78<a>
+        </div>
+    </footer>
 
-    <h2>Git help</h2>
-    <p>Med git help får man en oversigt over kommandoerne, hvis man nu ikke lige kunne huske dem.</p>
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.mainnav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.fa-bars').addEventListener('click', navbarToggle);
+    </script>
+
 </body>
-<footer>
-
-</footer>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xjv8twx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <title>DREAMSPACE | Kontakt os</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--Logo - jeg linker til logo'et, så man kan trykke tilbage til index-siden på billedet/logo-->
+            <a href="#">
+                <img class="logo" src="img/placeholder.jpg" alt="logo af DREAMSPACE">
+            </a>
+
+            <!--Burgermenu-->
+            <!--Bars icon-->
+            <i class="fas fa-bars"></i>
+            
+            <ul>
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">Hvad tilbyder vi?</a></li>
+                <li><a href="#">Mød os</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Kontakt os</h1>
+
+        <!--Ved hjælp fra https://dominoeffekten.dk/htmlCode/forms.html-->
+        <div class="kontakt-box">
+            <form>
+                <label for="textinputID">Navn<input type="text"></label>
+            </form>
+
+            <form>
+                <label for="num">Telefonnumer</label>
+                <input type="number" name="telefonnummer" id="num">
+            </form>
+
+            <form>
+                <label for="emailID">E-mail</label>
+                <input type="email" id="emailID" name="emailInput">
+            </form>
+
+            <form>
+                <textarea name="message" rows="10" cols="30">Din besked</textarea>
+            </form>
+
+            <button>Send besked</button>
+
+        </div>
+
+        <article>
+            <h6>Telefon</h6>
+            <a href="telto:12345678" class="kontakt">12 34 56 78<a>
+
+            <h6>Mail</h6>
+            <a href="mailto:dreamspace@gmailcom" class="kontakt"> dreamspace@gmail.com<a>
+
+            <h6>Adresse</h6>
+            <p class="kontakt">Jyllandsgade 4, 8729 København</p>
+
+            <!--Google Maps billede, da det koster penge at få ind på hjemmeside-->
+            <img class="googlemaps" src="img/placeholder.jpg" alt="billede lokation af hovedkvarteret af Dreamspace">
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Ønsker du hjælp til din drøm?</p>
+            <button>JA!</button>
+            <br>
+            <a href="mailto:dreamspace@gmailcom"> dreamspace@gmail.com<a>
+            <a href="telto:12345678">12 34 56 78<a>
+        </div>
+    </footer>
+
+</body>
+</html>

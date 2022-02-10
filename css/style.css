@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+.illustration {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0 90px 0;
+}
+
+.cases img, .værdier img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Husk altid at skrive kommando på alle elementer, som herunder når man vil ramme det hele */
+.cases img:hover, .værdier img:hover {
+    border: red solid 5px;
+}
+
+.cta, .footer{
+    background-color: cadetblue;
+    height: 300px;
+    width: 100%;
+    margin: 50px 0 30px 0 ;
+    font-size: 20px;
+    font-family: lato;
+    padding: 40% 10% 50% 10%;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Lato;
+    color: chocolate;
+}
+
+/*H2 på cases 1*/
+h2 {
+    text-align: center;
+    font-family: Nunito, medium;
+    font-size: 30px;
+}
+
+
+/*CASES 2 side*/
+/*H3 på cases 2*/
+.casen__overskrift {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    margin: 20px 0 10px 20px;
+}
+
+.casen__p {
+    margin: 10px 0 10px 20px;
+    font-family: lato;
+    font-size: 15px;
+}
+
+.casen__img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+/* Link/overskrifterne på Cases 1 og cases 2*/
+.overskrift {
+    font-size: 20px;
+    font-family: Nunito;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 50px 0;
+}
+
+/*Hvad tilbyder vi side*/
+
+h1 {
+    font-family: nunito;
+    font-size: 45px;
+    text-align: center;
+}
+
+h3 {
+    font-family: nunito;
+    font-size: 30px;
+    margin: 10px 0 10px 20px;
+}
+li {
+    font-size: 15px;
+    font-family: lato;
+    margin: 2px;
+}
+
+/*Kontakt os side*/
+form {
+    justify-content: center;
+}
+
+.kontakt {
+    font-size: 15px;
+    font-family: lato;
+    margin-left: 20px;
+}
+
+h6 {
+    font-size: 25px;
+    font-family: nunito;
+    margin: 10px 0 0 20px;
+}
+
+.googlemaps {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin:20px 0 20px 0;
+}
+
+.kontakt-box {
+    font-size: 15px;
+    font-family: lato;
+}
+
+/*Om os side*/
+.team img {
+    height: 400px;
+    width: 400px;
+    object-position: center;
+    object-fit: cover;
+    margin: 20px;
+}
+
+h5 {
+    font-size: 25px;
+    font-family: lato;
+    
+}
+
+.team {
+    font-size: 15px;
+    font-family: lato;
+    width: 100%;
+    text-align: center;
+}
+
+/*Knapper på alle siderne */
+.btn2 {
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    color: red;
+    background-color: blue;
+    font-family: nunito;
+    border: none;
+}
+
+.btn2:hover {
+    width: 150px;
+    height: 100px;
+    font-size: 20px;
+    background-color: burlywood;
+}
+
+/* Burgermenu - fået hjælp ved tidligere arbejde ved Bom'Skarp */    
+  .mainnav li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .mainnav li a:hover {
+    color: pink;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 5px;
+    z-index: 2;
+    /*fylder ud med lidt whitespace til knapper*/
+  }
+    
+  header ul {
+    display: none;
+    list-style-type: none;
+    margin: auto;
+  }
+    
+  header li {
+    display: inline-block;
+    padding: 30px 20px;
+    margin: 0;
+    text-align: center;
+  }
+    
+  header a {
+    text-decoration: none; /*fjerne linkets understreger*/
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito';
+    font-size: 25px;
+    color: black;
+  }
+
+  header nav {
+      display: grid;
+      grid-template-columns: 51% 1fr;
+  }
+
+  .logo {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+}
+
+.fa-bars {
+    margin-left: auto;
+    font-size: 50px;
+    color: black;
+    padding: 5%; /*give knappen noget extra plads når man skal ramme den med finger/pil*/
+    /*click-bar funktion - pilen viser at man kan trykke på den*/
+    cursor: pointer;
+  }
+
+@media screen and (min-width: 800px) {
+
+/*Burgermenu forsvinder i PC version*/
+.fa-bars {
+    display: none;
+  }
+
+.logo {
+    height: 100px;
+    margin-left: auto;
+}
+}
