@@ -7,6 +7,7 @@ img {
     max-width: 100%;
 }
 
+/*Indeks siden/forsiden*/
 video {
     width: 100%;
 }
@@ -50,6 +51,10 @@ h4 {
     color: chocolate;
 }
 
+.planet {
+    display: none;
+}
+
 /*H2 på cases 1*/
 h2 {
     text-align: center;
@@ -57,6 +62,23 @@ h2 {
     font-size: 30px;
 }
 
+.cases1 p {
+    display: none;
+}
+
+.cases1 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .cases1 img:hover {
+     border: pink solid 5px;
+ }
 
 /*CASES 2 side*/
 /*H3 på cases 2*/
@@ -109,6 +131,10 @@ li {
     font-size: 15px;
     font-family: lato;
     margin: 2px;
+}
+
+.eksempel {
+    display: none;
 }
 
 /*Kontakt os side*/
@@ -243,6 +269,7 @@ h5 {
 @media screen and (min-width: 800px) {
 
 /*Burgermenu forsvinder i PC version*/
+/*Header*/
 .fa-bars {
     display: none;
   }
@@ -251,4 +278,65 @@ h5 {
     height: 100px;
     margin-left: auto;
 }
+
+.mainnav {
+    display: show;
+}
+
+/*Hvad tilbyder vi side*/
+.eksempel {
+    display: flex;
+}
+
+.eksempel img {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Cases side 1*/
+/*KAn ikke få det til at vises*/
+.cases1 p {
+    font-size: 15px;
+    font-family: Lato;
+    color: black;
+}
+
+h2 {
+    font-size: 45px;
+}
+.cases1 img {
+    margin-left: 20%;
+    height: 400px;
+    width: 400px;
+ }
+
+ .cases1 img:hover {
+     border: pink solid 10px;
+ }
+
+ .omos {
+     display: flex;
+ }
+
+ /* Indekssiden/forsiden */
+ .planet img {
+     height: 200px;
+     width: 200px;
+     object-fit: cover;
+     object-position: center;
+     display: flex;
+     
+ }
+
+ .planet h2 {
+     font-size: 20px;
+     font-family: Nunito;
+ }
+
 }
