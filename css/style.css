@@ -36,8 +36,9 @@ video {
 
 /* Footer */
 .cta, .footer{
-    background-image: url(../img/1x/Aktiv\ 23.png);
-    background-repeat: repeat;
+    background-image: url(../img/SVG/Aktiv\ 25.svg);
+    object-fit: cover;
+    object-position: center;
     height: 300px;
     width: 100%;
     margin: 50px 0 30px 0 ;
@@ -281,10 +282,11 @@ h5 {
 
 @media screen and (min-width: 800px) {
 
+
 /*Burgermenu forsvinder i PC version*/
 /*Header*/
-.fa-bars {
-    display: none;
+.icons, .fas .fa-bars {
+    display: none!important;
   }
 
 .logo {
