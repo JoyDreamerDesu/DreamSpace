@@ -33,8 +33,11 @@ video {
     border: red solid 5px;
 }
 
+
+/* Footer */
 .cta, .footer{
-    background-color: cadetblue;
+    background-image: url(../img/1x/Aktiv\ 23.png);
+    background-repeat: repeat;
     height: 300px;
     width: 100%;
     margin: 50px 0 30px 0 ;
@@ -112,6 +115,16 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     margin: 50px 0 50px 0;
+}
+
+.overskrift a {
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+    color: black;
+}
+
+.overskrift a:hover {
+    color: pink;
 }
 
 /*Hvad tilbyder vi side*/
@@ -257,7 +270,7 @@ h5 {
     margin-left: auto;
 }
 
-.fa-bars {
+    .fa-bars {
     margin-left: auto;
     font-size: 50px;
     color: black;
@@ -279,8 +292,13 @@ h5 {
     margin-left: auto;
 }
 
+header nav {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+}
+
 .mainnav {
-    display: show;
+    display: block;
 }
 
 /*Hvad tilbyder vi side*/
@@ -331,7 +349,6 @@ h2 {
      object-fit: cover;
      object-position: center;
      display: flex;
-     
  }
 
  .planet h2 {
