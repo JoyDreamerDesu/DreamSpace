@@ -66,6 +66,7 @@ li {
     font-size: 15px;
     font-family: lato;
     margin: 2px;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -156,16 +157,15 @@ h6 {
 
 /*-----------Footer-----------*/
 .cta, .footer{
-    background-image: url(../img/SVG/Aktiv\ 25.svg);
-    object-fit: cover;
-    object-position: center;
     height: 300px;
     width: 100%;
-    margin: 50px 0 30px 0 ;
+    margin: 50px 0 0 0 ;
     font-size: 20px;
     font-family: lato;
     padding: 40% 10% 50% 10%;
     text-align: center;
+    color: white;
+    background-color: beige;
 }
 
 .planet {
@@ -385,17 +385,138 @@ form {
     }
 
     /* Indekssiden/forsiden */
-    .planet img {
-        height: 200px;
-        width: 200px;
-        object-fit: cover;
-        object-position: center;
-        display: flex;
+    video {
+        height: 600px;
     }
 
-    .planet h2 {
+    .cases {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a"
+        "b c d"
+        "e f g"
+        ;
+    }
+
+    .cases h2 {
+        grid-area: a;
+    }
+
+    .casesimg1 {
+        grid-area: b;
+    }
+
+    .casesimg2 {
+        grid-area: c;
+    }
+
+    .casesimg3 {
+        grid-area: d;
+    }
+    .gw {
+        grid-area: e;
+    }
+    .web {
+        grid-area: f;
+    }
+    .bs {
+        grid-area: g;
+    }
+
+    .værdier {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a"
+        "b c d"
+        "e f g"
+        ;
+    }
+
+    .værdier h2 {
+        grid-area: a;
+    }
+
+    .værdier1 {
+        grid-area: b;
+    }
+
+    .værdier2 {
+        grid-area: c;
+    }
+
+    .værdier3 {
+        grid-area: d;
+    }
+
+    .bæredygtighed {
+        grid-area: e;
+    }
+
+    .integritet {
+        grid-area: f;
+    }
+
+    .kreativitet {
+        grid-area: g;
+    }
+
+    .planet {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-area: 
+        "a b c"
+        "d e f"
+        ;
+    }
+
+    .planet1 {
+        grid-area: a;
+    }
+
+    .planet2 {
+        grid-area: b;
+    }
+
+    .planet3 {
+        grid-area: c;
+    }
+
+    .websites {
+        grid-area: d;
+    }
+
+    .gd {
+        grid-area: e;
+    }
+
+    .bm {
+        grid-area: f;
+    }
+
+    /*Hvad tilbyder vi side*/
+    li {
         font-size: 20px;
-        font-family: Nunito;
+        margin: 20px;
     }
 
+
+    /*Cases 2 side */
+    .casen__p {
+        font-size: 20px;
+        color: white;
+    }
+
+    .casen__img {
+        height: 300px;
+        width: 400px;
+        display: inline-block;
+        padding: 20px;
+     }
+
+     /* Kontakt os siden */
+     .googlemaps {
+         height: 600px;
+     }
 }
