@@ -95,6 +95,8 @@ h4 {
     text-align: center;
     font-size: 20px;
     font-family: Lato;
+    padding: 4px;
+    margin: 20px;
 }
 
 h5 {
@@ -106,6 +108,13 @@ h6 {
     font-size: 25px;
     font-family: nunito;
     margin: 10px 0 0 20px;
+}
+
+p {
+    margin: 10px 0 10px 20px;
+    font-family: lato;
+    font-size: 15px;
+    color: white;
 }
 
 /*-----------HEADER-----------*/
@@ -131,7 +140,7 @@ h6 {
     color: pink;
 }
 
-/*----------------------*/
+/*----------INDEX------------*/
 
 .illustration {
     width: 100%;
@@ -149,45 +158,66 @@ h6 {
     margin-right: auto;
 }
 
+.planet {
+    display: none;
+}
+
+.planet-container {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding: 30px;
+    grid-gap: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      ;
+}
+
+.planet1 {
+    grid-area: a;
+}
+
+.planet2 {
+    grid-area: b;
+}
+
+.planet3 {
+    grid-area: c;
+}
+
 /* Husk altid at skrive kommando på alle elementer, som herunder når man vil ramme det hele */
 .cases img:hover, .værdier img:hover {
     border: red solid 5px;
 }
 
 
-/*-----------Footer-----------*/
-.cta, .footer{
-    height: 300px;
-    width: 100%;
-    margin: 50px 0 0 0 ;
-    font-size: 20px;
-    font-family: lato;
-    padding: 40% 10% 50% 10%;
-    text-align: center;
-    color: white;
-    background-color: beige;
-}
+/*-----------CASE OVERSIGT-----------*/
 
-.planet {
-    display: none;
-}
-
-.cases1 p {
-    display: none;
-}
-
-.cases1 img {
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.case-container {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding: 30px;
+    grid-gap: 60px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "case1 case-t1"
+      "case2 case-t2"
+      "case3 case-t3"
+    ;
 }
 
 .cases1 img:hover {
-     border: pink solid 5px;
+    border: pink solid 5px;
 }
 
 .casen__overskrift {
@@ -279,21 +309,41 @@ form {
 }
 
 /*Knapper på alle siderne */
-.btn2 {
+.knap {
     margin: 20px;
-    height: 50px;
-    width: 100px;
+    height: 90px;
+    width: 200px;
+    padding: 30px;
     color: black;
     background-color: rgb(255, 255, 255);
     font-family: nunito;
     border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 5px 10px 8px #434963;
+    font-size: 20px;
+        
+    /*position*/
+    display: block;
+    margin: auto;
 }
 
-.btn2:hover {
-    width: 150px;
-    height: 100px;
-    font-size: 20px;
+.knap:hover {
     background-color: #9dc0ff;
+}
+
+/*-----------Footer-----------*/
+.cta, .footer{
+    height: 300px;
+    width: 100%;
+    margin: 50px 0 0 0 ;
+    font-size: 20px;
+    font-family: lato;
+    padding: 40% 10% 50% 10%;
+    text-align: center;
+    color: white;
+    background-color: beige;
 }
 
 /*NAVIGATION*/
@@ -346,6 +396,18 @@ form {
         display: block;
     }
 
+    /*----------INDEX-----------*/
+    
+    .planet-container {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "a b c"
+          ;
+    }
+
     /*Hvad tilbyder vi side*/
     .eksempel {
         display: flex;
@@ -362,23 +424,17 @@ form {
         object-position: center;
     }
 
-    /*Cases side 1*/
-    /*KAn ikke få det til at vises*/
-    .cases1 p {
-        font-size: 15px;
-        font-family: Lato;
-        color: white;
-    }
-
-    .cases1 img {
-        margin-left: 20%;
-        height: 400px;
-        width: 400px;
+    /*-----------CASE OVERSIGT-----------*/
+    .case-container {
+        max-width: 900px;
     }
 
     .cases1 img:hover {
         border: pink solid 10px;
     }
+
+
+    /*-----------OM OS-----------*/
 
     .omos {
         display: flex;
@@ -462,58 +518,11 @@ form {
         grid-area: g;
     }
 
-    .planet {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-area: 
-        "a b c"
-        "d e f"
-        ;
-    }
-
-    .planet1 {
-        grid-area: a;
-    }
-
-    .planet2 {
-        grid-area: b;
-    }
-
-    .planet3 {
-        grid-area: c;
-    }
-
-    .websites {
-        grid-area: d;
-    }
-
-    .gd {
-        grid-area: e;
-    }
-
-    .bm {
-        grid-area: f;
-    }
-
     /*Hvad tilbyder vi side*/
     li {
         font-size: 20px;
         margin: 20px;
     }
-
-
-    /*Cases 2 side */
-    .casen__p {
-        font-size: 20px;
-        color: white;
-    }
-
-    .casen__img {
-        height: 300px;
-        width: 400px;
-        display: inline-block;
-        padding: 20px;
-     }
 
      /* Kontakt os siden */
      .googlemaps {

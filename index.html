@@ -15,7 +15,7 @@
 <body>
     <header> <!--HEADER: Joy og Lærke-->
         <nav>
-            <!--Logo - jeg linker til logo'et, så man kan trykke tilbage til index-siden på billedet/logo-->
+            <!--Logo-->
             <a href="index.html">
                 <img src="img/New-logo-light-text.png" alt="logo af DREAMSPACE">
             </a>
@@ -25,10 +25,10 @@
             <i class="fas fa-bars"></i>
             
             <ul class="mainnav">
-                <li><a href="#">Cases</a></li>
-                <li><a href="#">Hvad tilbyder vi?</a></li>
-                <li><a href="#">Mød os</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="casesoversigt.html">Cases</a></li>
+                <li><a href="hvadtilbydervi.html">Hvad tilbyder vi?</a></li>
+                <li><a href="omos.html">Mød os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -39,36 +39,55 @@
             <video controls width="320" height="240" autoplay loop muted>
             <source src="#" type="video/mp4">
             <p>Your browser does not support the video tag.</p> <!--vises kun, hvis brosweren ikke kan afspille videoen-->
-            <button class="btn1">MAKE MY WISH COME TRUE</button>
+
+            <!--Men man må godt style et link så det ligner en knap!-->
+            <a class="kanp" href="#">MAKE MY WISH COME TRUE</a>
             </video>
         </div>
         <img class="illustration" src="img/placeholder.jpg" alt="illustration til introduktion af forside">
 
+        <!--PLANETER: Joy-->
+        <section>
+            <div class="planet-container">
 
-        <article class="planet">
-            <img class="planet1" src="img/blåplanet.svg" alt="illustration af en planet som holder en computer">
-            <h4 class="websites">Websites</h4>
-            <img class ="planet2" src="img/rødplanet.svg" alt="illustration af en planet som holder en malerpensel">
-            <h4 class="gd">Grafisk design</h4>
-            <img class="planet3" src="img/lillaplanet.svg" alt="illustration af en planet som holder et brev">
-            <h4 class="bm">Branding og marketing</h4>
-        </article>
+                <a href="#">
+                    <div class="planet1">
+                        <img src="img/blåplanet.svg" alt="illustration af en planet som holder en computer">
+                        <h4>Websites</h4>
+                    </div >
+                </a>
+
+                <a href="#">
+                    <div class ="planet2">
+                        <img src="img/rødplanet.svg" alt="illustration af en planet som holder en malerpensel">
+                        <h4>Grafisk design</h4>
+                    </div>'
+                </a>
+
+                <a href="#">
+                    <div class="planet3">
+                        <img src="img/lillaplanet.svg" alt="illustration af en planet som holder et brev">
+                        <h4>Branding og marketing</h4>
+                    </div>
+                </a>
+            </div>
+        </section>
 
         <article class="cases">
             <h2>VORES SENESTE CASES</h2>
             <img class="casesimg1" src="img/placeholder.jpg" alt="cases omkring Grey Wolf">
-            <h4 class="gw">Grey Wolf</h4>
+            <h4 class="gw">Visuel Novelle</h4>
             
             <img class="casesimg2" src="img/placeholder.jpg" alt="cases omkring Webaccessibility">
-            <h4 class="web">Webaccessibility</h4>            
+            <h4 class="web">Photoshoot</h4>            
             
             <img class="casesimg3" src="img/placeholder.jpg" alt="cases omkring Bom'Skarp">
-            <h4 class="bs">Bom'Skarp</h4>
+            <h4 class="bs">Illustrationer</h4>
         </article>
 
         <div class="cta">
             <p>Ønsker du en uforpligtende samtale, så kontakt os her</p>
-            <button class="btn2">KONTAKT</button>
+            <a class="knap" href="#">KONTAKT</a>
         </div>
 
         <article class="værdier">
@@ -87,7 +106,7 @@
     <footer>
         <div class="footer">
             <p>Ønsker du hjælp til din drøm?</p>
-            <button>JA!</button>
+            <a class="knap" href="#">JA</a>
                 
                 <div>
                     <a href="mailto:dreamspace@gmailcom"> dreamspace@gmail.com<a>
