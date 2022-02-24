@@ -220,19 +220,7 @@ p {
     border: pink solid 5px;
 }
 
-.casen__overskrift {
-    font-family: Nunito, sans-serif;
-    font-size: 20px;
-    margin: 20px 0 10px 20px;
-}
-
-.casen__p {
-    margin: 10px 0 10px 20px;
-    font-family: lato;
-    font-size: 15px;
-}
-
-.casen__img {
+.caseimg {
     height: 200px;
     width: 300px;
     object-fit: cover;
@@ -290,6 +278,7 @@ form {
 .kontakt-box {
     font-size: 15px;
     font-family: lato;
+    color: white;
 }
 
 /*Om os side*/
@@ -343,7 +332,17 @@ form {
     padding: 40% 10% 50% 10%;
     text-align: center;
     color: white;
-    background-color: beige;
+    background-color: #9dc0ff;
+}
+
+.footer h3 {
+    font-size: 40px;
+    color: white;
+}
+
+.footer a {
+    font-size: 30px;
+    font-family: nunito;
 }
 
 /*NAVIGATION*/
