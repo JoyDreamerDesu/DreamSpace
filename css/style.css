@@ -280,27 +280,7 @@ div.case-billeder img:hover {
     border: #9dc0ff solid 5px;
 }
 
-/* Link/overskrifterne på Cases 1 og cases 2*/
-.overskrift {
-    font-size: 20px;
-    font-family: Nunito;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px 0 50px 0;
-}
-
-.overskrift a {
-    transition: all 0.3 ease 0s;
-    text-decoration: none;
-    color: white;
-}
-
-.overskrift a:hover {
-    color: pink;
-}
-
 /*Hvad tilbyder vi side*/
-
 .eksempel {
     display: none;
 }
@@ -373,12 +353,11 @@ form {
 
 /*-----------Footer-----------*/
 .cta, .footer{
-    height: 300px;
     width: 100%;
     margin: 50px 0 0 0 ;
     font-size: 20px;
     font-family: lato;
-    padding: 40% 10% 50% 10%;
+    padding: 20% 10% 20% 10%;
     text-align: center;
     color: white;
     background-color: #9dc0ff;
@@ -488,8 +467,8 @@ form {
     }
 
     .case-billeder {
-        max-width: 900px;
-        column-count: 4;
+        max-width: 500px;
+        column-count: 2;
     }
 
     /*-----------OM OS-----------*/
