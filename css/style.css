@@ -32,13 +32,13 @@ video {
 }
 header {
     width: 100%;
-    height: 100px;
+    height: 100%;
     margin: 5px;
     z-index: 2;
 }
 
 header nav {
-    height: 100px;
+    height: 100%;
 }
 
 header img{
@@ -385,7 +385,7 @@ form {
 }
 
 /*-----------Footer-----------*/
-.cta, .footer{
+.cta, footer{
     width: 100%;
     margin: 50px 0 0 0 ;
     font-size: 20px;
@@ -424,12 +424,8 @@ form {
 }
 
 @media screen and (min-width: 800px) {
-    /*Burgermenu forsvinder i PC version*/
     /*Header*/
 
-    header nav {
-        height: 131px;
-    }
     /*desktop version - her kommer tekst punkterne ud ved siden af hinanden*/
     header ul {
         display: flex;
@@ -437,14 +433,6 @@ form {
 
     h2 {
         font-size: 45px;
-    }
-
-    .icons {
-        display: none;
-    }
-
-    .fa-bars {
-        display: none;
     }
 
     .logo {
@@ -598,4 +586,11 @@ form {
      .googlemaps {
          height: 600px;
      }
+     
+
+
+    .fa-bars {
+        display: none;
+    }
+
 }

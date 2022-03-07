@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xjv8twx.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <title>DREAMSPACE | Forside</title>
 </head>
 <body>
@@ -35,14 +36,14 @@
 
     <main>
         <!--Her kommer introduktionsvideo-->
-        <div>
+        <div class="forsidevideo">
             <video class="cta-vid" autoplay loop muted>
             <source src="img/cta-video_high_res.mp4" type="video/mp4">
             <p>Your browser does not support the video tag.</p> <!--vises kun, hvis brosweren ikke kan afspille videoen-->
 
             <!--Men man må godt style et link så det ligner en knap!-->
-            <a class="knap" href="kontakt.html"><span>MAKE MY WISH COME TRUE</span></a>
             </video>
+            <a class="knap" href="kontakt.html"><span>MAKE MY WISH COME TRUE</span></a>
         </div>
         
         <article class="fab">
@@ -115,24 +116,12 @@
     </main>
 
     <footer>
-        <div class="footer">
             <p>Ønsker du hjælp til din drøm?</p>
             <a class="knap" href="kontakt.html">JA</a>
-                
-                <div>
-                    <a href="mailto:dreamspace@gmailcom"> dreamspace@gmail.com<a>
-                    <a href="telto:12345678">12 34 56 78<a>
-                </div>
-        </div>
+                <nav>
+                    <a href="mailto:dreamspace@gmailcom"> dreamspace@gmail.com</a>
+                    <a href="telto:12345678">12 34 56 78</a>
+                    </nav>
     </footer>
-
-    <script>
-        const navbarToggle = () => {
-        const nav = document.querySelector('.mainnav');
-        nav.classList.toggle('toggleShow');
-        }
-        document.querySelector('.fa-bars').addEventListener('click', navbarToggle);
-    </script>
-
 </body>
 </html>
