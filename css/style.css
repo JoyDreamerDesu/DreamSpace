@@ -16,6 +16,7 @@ body { /*for at få alt helt ud til kanten af siden */
 
 img {
     max-width: 100%;
+    border-radius: 2%;
 }
 
 /*Indeks siden/forsiden*/
@@ -23,6 +24,12 @@ video {
     width: 100%;
 }
 
+.fab {
+    padding: 10%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
 header {
     width: 100%;
     height: 100px;
@@ -88,7 +95,6 @@ h2 {
 h3 {
     font-family: nunito;
     font-size: 30px;
-    margin: 10px 0 10px 20px;
 }
 
 h4 {
@@ -111,10 +117,10 @@ h6 {
 }
 
 p {
-    margin: 10px 0 10px 20px;
     font-family: lato;
-    font-size: 15px;
+    font-size: 16px;
     color: white;
+    line-height: 150%;
 }
 
 /*-----------HEADER-----------*/
@@ -137,7 +143,7 @@ p {
 }
   
 .mainnav li a:hover {
-    color: pink;
+    color: #9dc0ff;
 }
 
 /*----------INDEX------------*/
@@ -160,11 +166,20 @@ a span {
 .cases img, .værdier img {
     height: 300px;
     width: 300px;
-    border-radius: 10px;
     margin: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Husk altid at skrive kommando på alle elementer, som herunder når man vil ramme det hele */
+.cases img:hover {
+    border: #9dc0ff solid 5px;
+}
+
+.værdier p {
+    text-align: center;
+    padding: 2%;
 }
 
 .planet {
@@ -200,11 +215,6 @@ a span {
     grid-area: c;
 }
 
-/* Husk altid at skrive kommando på alle elementer, som herunder når man vil ramme det hele */
-.cases img:hover, .værdier img:hover {
-    border: red solid 5px;
-}
-
 
 /*-----------CASE OVERSIGT-----------*/
 
@@ -226,7 +236,7 @@ a span {
 }
 
 div.case-container img:hover {
-    border: pink solid 5px;
+    border: #9dc0ff solid 5px;
 }
 
 /* CASE 1 */
@@ -285,6 +295,10 @@ div.case-billeder img:hover {
     display: none;
 }
 
+.htv {
+margin-left: 40px;
+}
+
 /*Kontakt os side*/
 form {
     justify-content: center;
@@ -310,13 +324,32 @@ form {
     color: white;
 }
 
-/*Om os side*/
+/*Om os side - lavet ved hjælp af https://www.tutorialrepublic.com/codelab.php?topic=faq&file=css-image-swap-on-hover */
 .team img {
     height: 400px;
     width: 400px;
     object-position: center;
     object-fit: cover;
     margin: 20px;
+    display: block;
+    position: relative;
+}
+
+.medarbejder {
+    position: relative;
+    display: inline-block;
+}
+
+.medarbejder .back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.medarbejder:hover .back {
+    display: inline;
 }
 
 .team {
@@ -457,7 +490,7 @@ form {
     }
 
     .cases1 img:hover {
-        border: pink solid 10px;
+        border: #9dc0ff solid 10px;
     }
 
     /*-----------CASE 1,2,3-----------*/
