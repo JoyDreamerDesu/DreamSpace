@@ -19,7 +19,7 @@ img {
     border-radius: 2%;
 }
 
-/*Indeks siden/forsiden*/
+/*Indekssiden/forsiden*/
 video {
     width: 100%;
 }
@@ -55,9 +55,9 @@ header ul {
 }
     
 header li {
-    display: inline-block; /* afstand ift. padding både for oveog for neden. Undlad "block" hvis der bare skal være padding i siderne - man kan også bruge display-none for at fjerne menuen*/
+    display: inline-block; /* afstand ift. padding både for oven og for neden. Undlad "block" hvis der bare skal være padding i siderne - man kan også bruge display-none for at fjerne menuen*/
     margin: 0; /* hele vejen rundt*/
-    padding: 45px 15px; /*føreste verdi: top og bund - anden verdi: siderne */
+    padding: 45px 15px; /*første værdi: top og bund - anden værdi: siderne */
 }
     
 header a {
@@ -325,6 +325,9 @@ form {
 }
 
 /*Om os side - lavet ved hjælp af https://www.tutorialrepublic.com/codelab.php?topic=faq&file=css-image-swap-on-hover */
+
+
+
 .team img {
     height: 400px;
     width: 400px;
@@ -358,6 +361,20 @@ form {
     width: 100%;
     text-align: center;
 }
+
+.omosKontakt img {
+    height: 25px;
+    width: 25px;
+}
+.omosKontakt {
+    display: flex;
+    justify-content: center;
+}
+
+.kortOm {
+    text-align: left;
+    margin: 0 9% 0 9%;
+    }
 
 /*Knapper på alle siderne */
 .knap {
@@ -495,8 +512,40 @@ form {
     /*-----------OM OS-----------*/
 
     .omos {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-areas: 
+        ". a ."
+        "b c d"
     }
+    .omosTeam {
+        grid-area: a;
+    }
+    .joyKasse {
+        grid-area: b;
+    }
+    .julieKasse {
+        grid-area: c;
+    }
+    .laerkeKasse {
+        grid-area: d;
+    }
+
+
+    } 
+    .omosTeam {
+    grid-area: a;
+    }
+    .joyKasse {
+        grid-area: b;
+    }
+    .julieKasse {
+        grid-area: c;
+    }
+    .laerkeKasse {
+        grid-area: d;
+    }
+
 
     /* Indekssiden/forsiden */
     video {
