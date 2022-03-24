@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Kontakt Dream Space og få et tilbud om en uforpligtende samtale, om hvordan vi kan designe din drøm.">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/black-logo.png" type="image/png"> <!-- Logo på hjemmesidebaren--> 
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <title>DREAMSPACE | Kontakt os</title>
@@ -37,55 +39,73 @@
     <main>
 
         <h1>Kontakt os</h1>
+            <p class="center">Du er altid velkommen til at kontakte os, skulle du have spørgsmål til vores tilbud om en uforpligtende samtale eller arbejdet vi kan udføre for dig.</p>
+            <!--POPUP https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal-->
+            <a id="myBtn" class="knap" href="#">Udfyld form</a>
 
-        <!--Ved hjælp fra https://dominoeffekten.dk/htmlCode/forms.html-->
-        <div class="kontakt-box">
-            <form>
-                <label for="textinputID">Navn<input type="text"></label>
-            </form>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                        <form class="center" name="myForm" action="mailto:amjoyjoergensen@gmail.com" method="post">
+                            <br>
+                            <label>Navn* <br> <!-- stjerne betyder must! - her er det fint at bruge break for at få label ned under den ande label-->
+                                <input type="text" name="name" required>
+                            </label>
+                            <br> <!--her er det fint at bruge break for at få label ned under den ande label-->
+                            <label>E-mail* <br>
+                                <input type="email" name="email" required>
+                            </label>
+                            <br>
+                            <label>Besked* <br>
+                                <textarea name="message" rows="10" cols="30" required></textarea>
+                            </label>
+                            <br>
+                            <button>Send</button>
+                        </form>
+                </div>
+            </div>
 
-            <form>
-                <label for="num">Telefonnumer</label>
-                <input type="number" name="telefonnummer" id="num">
-            </form>
+        <article class="center">
+            <h2>Telefon</h2>
+            <a href="telto:12345677" class="kontakt">12 34 56 77</a>
+            <p class="kontakt">Vi er på kontoret fra 09:00-15:00 alle hverdage.</p>
 
-            <form>
-                <label for="emailID">E-mail</label>
-                <input type="email" id="emailID" name="emailInput">
-            </form>
+            <h2>Mail</h2>
+            <a href="mailto:kontakt@dreamspace.dk" class="kontakt"> kontakt@dreamspace.dk</a>
+            <p class="kontakt">Send en mail og vi svarer tilbage indenfor 2 arbejdsdage.</p>
 
-            <form>
-                <textarea name="message" rows="10" cols="30">Din besked</textarea>
-            </form>
-
-            <a class="knap" href="#">Send besked</a>
-
-        </div>
-
-        <article>
-            <h6>Telefon</h6>
-            <a href="telto:12345677" class="kontakt">12 34 56 77<a>
-
-            <h6>Mail</h6>
-            <a href="mailto:kontakt@dreamspace.dk" class="kontakt"> kontakt@dreamspace.dk<a>
-
-            <h6>Adresse</h6>
+            <h2>Adresse</h2>
             <p class="kontakt">Filmbyen 23, 2. tv, 8000 Aarhus</p>
-
-            <!--Google Maps billede, da det koster penge at få ind på hjemmeside-->
-            <img class="googlemaps" src="img/kort.jpg" alt="billede lokation af hovedkvarteret af Dreamspace">
         </article>
+
+        <!--Google Maps billede, da det koster penge at få ind på hjemmeside-->
+        <img class="googlemaps" src="img/kort.jpg" alt="billede lokation af hovedkvarteret af Dreamspace">
     </main>
 
     <footer>
-        <p>Ønsker du hjælp til din drøm?</p>
-        <a class="knap" href="kontakt.html">JA</a>
-            
-        <nav>
-                <a href="mailto:kontakt@dreamspace.dk"> kontakt@dreamspace.dk</a>
-                <a href="telto:12345677">12 34 56 77</a>
-        </nav>
-</footer>
+        <article class="footer-grid">
+            <div class="f1">
+                <h3 class="center">Ønsker du hjælp til din drøm?</h3>
+                <a class="knap" href="kontakt.html">JA</a>
+            </div>
+            <div class="f2">
+                <ul class="mainnav">
+                    <li><a href="hvadtilbydervi.html">Hvad tilbyder vi?</a></li>
+                    <li><a href="omos.html">Mød os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="f3">
+                <nav class="center omosKontakt">
+                    <a href="tel:12345678"><img src="img/telefon.svg" alt="rundt ikon af en telefon"></a>
+                    <a href="mailto:dreamspace@gmail.com"><img src="img/mail.svg" alt="rundt ikon af et brev"></a>
+                </nav>
+            </div>
+        </article>
+        <p class="credits">Dream Space er lavet af A.M. Joy J., Julie P. og Lærke V.</p>
+        <p class="credits">Denne webside er resultatet af et uddannelses project under multimediedesign på IBA Erhversakedemi Kolidng</p>
+    </footer>
 
 </body>
 </html>
